@@ -187,3 +187,5 @@ A few thoughts to end on.
 * The randomness in the Google matrix API routes will also mean many short distances in non-urban areas, where I'd expect circuity to be much higher (something that should actually be easy enough to test). Though that wouldn't explain it bottoming out at a rather high ~1.35.
 
 So there we are, first rmarkdown experiment over. That was quite pleasing if rather time-consuming. The process certainly couldn't be easier though. (I've said that before attempting to transfer to Jekyll. Let's see how that goes...)
+
+*Update: as I didn't have one, I nabbed [this syntax highlight stylesheet](https://github.com/jfisher-usgs/jfisher-usgs.github.com/blob/master/assets/themes/twitter-2.0/css/syntax.css) via [here](http://lcolladotor.github.io/2013/11/09/new-Fellgernon-Bit-setup-in-Github/#.VZbmnkZF7m6).*
