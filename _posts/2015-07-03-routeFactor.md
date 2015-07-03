@@ -5,11 +5,11 @@ date: 2015-07-03
 comments: true
 ---
 
-For my first foray into [rmarkdown](http://rmarkdown.rstudio.com/) (and, all being well, getting that rmarkdown directly into a [jekyll](http://jekyllrb.com/) blog), let's have a go at writing about [getting a `route factor'](https://github.com/DanOlner/randomNetworkDistancer) from [Google's route matrix API](https://developers.google.com/maps/documentation/distancematrix/). I won't cover actually getting that data - have a look at that github link for information on how to do it.
+For my first foray into [r-markdown](http://rmarkdown.rstudio.com/) (and getting that rmarkdown directly into a [jekyll](http://jekyllrb.com/) blog), let's have a go at [getting a `route factor'](https://github.com/DanOlner/randomNetworkDistancer) from [Google's route matrix API](https://developers.google.com/maps/documentation/distancematrix/). I won't cover actually getting that data - have a look at [the github page](https://github.com/DanOlner/randomNetworkDistancer) for source code/information on how to do it, and a copy of the CSV result that's used here.
 
 The 'route factor' is just the ratio of a route distance between two points over its Euclidean distance (or [Great Circle](https://en.wikipedia.org/wiki/Great-circle_distance) equivalent, which is what I use here via the [sp package](http://cran.r-project.org/web/packages/sp/index.html)). So if the distance to drive a route is twice as far as the crow flies, the route factor is 2. In modern parlance it's known as [circuity](https://en.wikibooks.org/wiki/Transportation_Geography_and_Network_Science/Circuity) (note the handy diagram in that link) though I first picked the idea up from [this rather wonderful 1979 geography textbook](http://www.amazon.co.uk/People-Pattern-Process-Introduction-Geography/dp/0713162414) and now can't stop calling it 'route factor'. 
 
-I'd originally harvested google distance data in order just to show that, if goods were moving between random points in the UK, the distribution would be clearly different from the spatial decay present in the 'goods lifted' data (it is). But it also provided a handy way to check circuity. (Sigh... it's shorter, isn't it? I should start using it!)
+I'd originally harvested google distance data in order just to show that, if goods were moving between random points in the UK, the distribution would be clearly different from the spatial decay present in the 'goods lifted' data (it is). But it also provided a handy way to check circuity.
 
 The data also offers the intriquing possibility of checking how circuity *changes depending on the route distance*. Intuitively, one would expect that shorter routes would be more wiggly and, for larger journeys, the ability to utilise more major roads would increase the efficiency. We'll take a look at that here.
 
@@ -28,7 +28,7 @@ library(Hmisc)#for binning distances
 routes <- read.csv("latestrbindOfMatrixOutputs.csv")
 {% endhighlight %}
 
-We've got the following variables in 'routes' that Google's matrix API provides:
+That's ~5.5 thousand routes between random points in Great Britain. We've got the following variables in 'routes' that Google's matrix API provides:
 
 
 {% highlight r %}
@@ -181,7 +181,7 @@ lines(rfhypo, col="green")
 
 A few thoughts to end on.
 
-* In comparison to some of the circuity numbers quoted in [that wikibooks entry](https://en.wikibooks.org/wiki/Transportation_Geography_and_Network_Science/Circuity), this route factor looks a little high. It makes me frett about coordinate systems. I'm pretty sure the original data is lat-long, but... yes, worth a sanity check. The article does mention two points, though:
+* In comparison to some of the circuity numbers quoted in [that wikibooks entry](https://en.wikibooks.org/wiki/Transportation_Geography_and_Network_Science/Circuity), this route factor looks rather high. It makes me fret about coordinate systems. I'm pretty sure the original data is lat-long, but... yes, worth a sanity check. The article does mention two points, though:
     * "The measure has also been considered by Wolf (2004) using GPS traces of actual travelers route selections, finding that many actual routes experience much higher circuity than might be expected."
     * "Levinson and El-Geneidy (2009) show that circuity measured through randomly selected origins and destinations exceeds circuity measured from actual home-work pairs. Workers tend to choose commutes with lower circuity, applying intelligence to their home location decisions compared to their work."
 * The randomness in the Google matrix API routes will also mean many short distances in non-urban areas, where I'd expect circuity to be much higher (something that should actually be easy enough to test). Though that wouldn't explain it bottoming out at a rather high ~1.35.
