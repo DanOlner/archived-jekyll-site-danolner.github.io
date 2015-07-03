@@ -11,7 +11,7 @@ The 'route factor' is just the ratio of a route distance between two points over
 
 I'd originally harvested google distance data in order just to show that, if goods were moving between random points in the UK, the distribution would be clearly different from the spatial decay present in the 'goods lifted' data (it is). But it also provided a handy way to check circuity.
 
-The data also offers the intriquing possibility of checking how circuity *changes depending on the route distance*. Intuitively, one would expect that shorter routes would be more wiggly and, for larger journeys, the ability to utilise more major roads would increase the efficiency. We'll take a look at that here.
+The data also offers the intriguing possibility of checking how circuity *changes depending on the route distance*. Intuitively, one would expect that shorter routes would be more wiggly and, for larger journeys, the ability to utilise more major roads would increase the efficiency. We'll take a look at that here.
 
 I'll be using sp's [spDist](http://rpackages.ianhowson.com/rforge/sp/man/spDistsN1.html) function to get the great-circle distance between points - in what seems like a clumsy way to me, so it'd be good to hear about better options.
 
