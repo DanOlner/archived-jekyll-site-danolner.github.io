@@ -126,7 +126,7 @@ abline(v=mean(routes$rfoverone),col="red")
 
 <img src="http://danolner.github.io/figs/routeFactor/unnamed-chunk-11-1.png" title="center" alt="center" style="display: block; margin: auto;" />
 
-So - how does circuity change for the size of journey taken? To find out, let's make a function that will stick a range of distances into [bins of equal sizes](http://stackoverflow.com/questions/6104836/splitting-a-continuous-variable-into-equal-sized-groups), so we can easily show the different that the number of bins makes. "Cut2" does the binning, providing an index we can use.
+So - how does circuity change for the size of journey taken? To find out, let's make a function that will stick a range of distances into [bins of equal sizes](http://stackoverflow.com/questions/6104836/splitting-a-continuous-variable-into-equal-sized-groups), so we can easily show the difference that the number of bins makes. "Cut2" does the binning, providing an index we can use.
 
 
 
