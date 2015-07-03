@@ -166,7 +166,7 @@ lines(rfhypo, col="green")
 
 <img src="http://danolner.github.io/figs/routeFactor/unnamed-chunk-13-1.png" title="center" alt="center" style="display: block; margin: auto;" />
 
-Boom! Circuity is higher for shorter distances. For higher bin numbers, though, the drop-off isn't quite so smooth:
+Boom! Circuity is higher for shorter distances. For higher bin numbers, though, the drop-off isn't quite so smooth. I suspect this is more likely to be due to the number of route samples than the underlying pattern. 
 
 
 {% highlight r %}
@@ -178,7 +178,7 @@ lines(rfhypo, col="green")
 
 <img src="http://danolner.github.io/figs/routeFactor/unnamed-chunk-14-1.png" title="center" alt="center" style="display: block; margin: auto;" />
 
- I suspect this is more likely to be due to the number of route samples than the underlying pattern. A few thoughts to end on:
+ A few thoughts to end on:
 
 * In comparison to some of the circuity numbers quoted in [that wikibooks entry](https://en.wikibooks.org/wiki/Transportation_Geography_and_Network_Science/Circuity), this route factor looks rather high. It makes me fret about coordinate systems. I'm pretty sure the original data is lat-long, but... yes, worth a sanity check. The article does mention two points, though:
     * "The measure has also been considered by Wolf (2004) using GPS traces of actual travelers route selections, finding that many actual routes experience much higher circuity than might be expected."
