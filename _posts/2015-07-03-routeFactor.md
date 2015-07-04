@@ -153,9 +153,7 @@ rfbins <- function(data, bins) {
 
 ***
 
-This function gives us the average distance for route and great-circle distance in the same, equal-size bins ("g" in the cut2 function splits into equally-sized quantiles). Let's see what ten bins looks like to start with:
-
-
+This function gives us the average route factor in each of a set number of equal-size distance bins, using the average distance in each to give us matching row numbers ("g" in the cut2 function splits into equally-sized quantiles). Let's see what ten bins looks like to start with:
 
 {% highlight r %}
 rfhypo <- rfbins(routes, 10)
