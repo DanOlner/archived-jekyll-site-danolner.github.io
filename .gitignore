@@ -1,4 +1,5 @@
 _cache
 _site
 
+#Cos pygments doesn't work locally but hopefully it does on the server. Though not sure about that currently...
 _config.yml

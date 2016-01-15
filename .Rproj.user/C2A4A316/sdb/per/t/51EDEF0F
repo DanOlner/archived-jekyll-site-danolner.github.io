@@ -1,0 +1,17 @@
+{
+    "contents" : "---\nlayout: post\ntitle:  \"testing a new page\"\ncategories: [jekyll, rstats]\ntags: [knitr, servr, httpuv, websocket]\n---\n\nWell, let's just see if we can output anything.\n\n```\nx <- runif(100,1,10)\nx\n```\n\nWho knows, might have done.",
+    "created" : 1447147888203.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "599922125",
+    "id" : "51EDEF0F",
+    "lastKnownWriteTime" : 1447102846,
+    "path" : "C:/Users/SMI2/Dropbox/Github main webpages/DanOlner.github.io/_source/test.Rmd",
+    "project_path" : "_source/test.Rmd",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_markdown"
+}

@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "testing a new page"
+categories: [jekyll, rstats]
+tags: [knitr, servr, httpuv, websocket]
+---
+
+Well, let's just see if we can output anything.
+
+```
+x <- runif(100,1,10)
+x
+```
+
+Who knows, might have done.

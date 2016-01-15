@@ -28,8 +28,12 @@ comments: true
 permalink: /:year/:month/:title
 paginate: 3
 
-highlighter: pygments
+#encoding: utf-8
+
+#highlighter: pygments
+highlighter: true
 markdown: redcarpet
+#markdown: rdiscount
 redcarpet:
   extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
 
