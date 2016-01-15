@@ -104,7 +104,7 @@ n = 300
 #1 in 100
 p = 0.01
 #iterations
-ites = 250
+ites = 1500
 {% endhighlight %}
 
 As mentioned, there are two **agent types**: two-thirds of agents don't care where they move, if they've decided to move. The other third have a preference. These two preferences are set by giving each agent type its own vector for selecting a zone to move to. 
@@ -239,7 +239,7 @@ table(rbinom(nrow(agents), 1 , agents$newprob))
 {% highlight text %}
 ## 
 ##   0   1 
-## 891   9
+## 890  10
 {% endhighlight %}
 
 But if population is higher in all zones (which it can't be in the model, but just to illustrate). 10 times the current probability of 0.01 is about 1 in 10 deciding to move:
@@ -254,7 +254,7 @@ table(rbinom(nrow(agents), 1 , rep(10 * p,nrow(agents))))
 {% highlight text %}
 ## 
 ##   0   1 
-## 794 106
+## 823  77
 {% endhighlight %}
 
 
@@ -268,7 +268,7 @@ table(rbinom(nrow(agents), 1 , rep(10 * p,nrow(agents))))
 {% highlight text %}
 ## 
 ##   0   1 
-## 820  80
+## 808  92
 {% endhighlight %}
 
 
@@ -282,10 +282,24 @@ table(rbinom(nrow(agents), 1 , rep(10 * p,nrow(agents))))
 {% highlight text %}
 ## 
 ##   0   1 
-## 798 102
+## 821  79
 {% endhighlight %}
 
 And if lower in all zones, agents are more likely to stay put:
+
+
+{% highlight r %}
+table(rbinom(nrow(agents), 1 , rep(0.1 * p,nrow(agents))))
+{% endhighlight %}
+
+
+
+{% highlight text %}
+## 
+##   0 
+## 900
+{% endhighlight %}
+
 
 
 {% highlight r %}
@@ -314,20 +328,6 @@ table(rbinom(nrow(agents), 1 , rep(0.1 * p,nrow(agents))))
 ## 900
 {% endhighlight %}
 
-
-
-{% highlight r %}
-table(rbinom(nrow(agents), 1 , rep(0.1 * p,nrow(agents))))
-{% endhighlight %}
-
-
-
-{% highlight text %}
-## 
-##   0   1 
-## 897   3
-{% endhighlight %}
-
 For those who **are** moving, in this next step, they decide where to go. The fiddly part here are the two selections from the 'even' and 'bias' vectors that tell agents which zone they're moving to. To explain it as much for my own later sanity as anything, here's what's going on. We're just selecting a random index from each of them. In the case of 'even', 1,2 and 3 have the same chance of being chosen (as can be seen if we whack the number of random selections right up). Whereas 'bias' ends up telling about a tenth the number of biased agents to move to #3:
 
 
@@ -340,7 +340,7 @@ table(even[floor(runif(n = 1000000, min=1, max=length(even)+1))])
 {% highlight text %}
 ## 
 ##      1      2      3 
-## 333550 332801 333649
+## 333104 333977 332919
 {% endhighlight %}
 
 
@@ -354,7 +354,7 @@ table(bias[floor(runif(n = 1000000, min=1, max=length(bias)+1))])
 {% highlight text %}
 ## 
 ##      1      2      3 
-## 475716 476704  47580
+## 474987 477446  47567
 {% endhighlight %}
 
 In the zone selection itself, each random selection is the same length as agents of that type. As the comments note, I'm a little amazed this works - I'm not really clear on how that random vector can be created and then, via an ifelse, be assigned to the correct index... oh well, it works!
