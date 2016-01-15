@@ -1,7 +1,8 @@
 ---
+layout: post
 title: "Migration entropy"
-author: "Dan Olner"
-output: html_document
+date: 2016-01-15
+comments: true
 ---
 
 #Preamble
