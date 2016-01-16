@@ -2,4 +2,6 @@ _cache
 _site
 
 #Cos pygments doesn't work locally but hopefully it does on the server. Though not sure about that currently...
-_config.yml
+#Update: this won't work, somewhat obviously, cos it'll remove the config file from the remote
+#So will have to change every time for local viewing until I can solve the pygments problem!
+#_config.yml
