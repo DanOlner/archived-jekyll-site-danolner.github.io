@@ -30,8 +30,8 @@ paginate: 3
 
 #encoding: utf-8
 
-#highlighter: pygments
-highlighter: true
+highlighter: pygments
+#highlighter: true
 markdown: redcarpet
 #markdown: rdiscount
 redcarpet:
