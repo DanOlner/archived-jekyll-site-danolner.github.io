@@ -6,7 +6,7 @@ comments: true
 ---
 
 
-#Preamble
+#Migration/randomness
 
 One of the parts of my new job (both [here](https://www.sheffield.ac.uk/smi) and [here](http://ubdc.ac.uk/)) is a project examining how migration and a host of other spatial-economic and social things interact. This is awesome news for me: the movement of people (and its interaction with the spatial economy) was both essential to the PhD and a mirror to the stuff in [GRIT](http://www.coveredinbees.org/node/411).
 
@@ -24,7 +24,7 @@ It's a dumb idea but it gets the point across: there's a labelling effect that c
 
 Just to re-iterate, none of this is probably relevant to the work that triggered this thought. This is just me working through my intuition. I'm guessing it's easy enough to distinguish area effects for places with the same overall characteristics/migration-flows but separate out the effect of differing groups. But let's just carry on with the thought process anyhoo.
 
-#Coupla lit bits
+#Thoughts from a couple of papers
 
 There are a couple of facts from my first head-butt of the literature that jump out. First-up are the basic demographic differences involved. Not only do migrants from outside the UK tend to be much younger, but there's a difference in *internal* migration rates between ethnic groups too (though obv, best not to conflate ethnicity and external migration!) This is analysed in [Finney/Simpson 2008](http://onlinelibrary.wiley.com/doi/10.1002/psp.481/abstract). Their key finding is that, once demographics are controlled for, ethnic groups in the UK -
 
@@ -50,7 +50,7 @@ So we've got this high churn going on in economically attractive places - which 
 
 Or prices could be pushed up if people are piling in - but you can see equilibrium pressures at work as out-migration rates increase too. 
 
-#Model pre-amble
+#The model
 
 Which segues me nicely into to the following silly little model. I've got a very long way to fully mapping out the dynamics involved but, here, I just wanted to get started with something very basic. This post is **also** an attempt to persuade R to do a simple little agent/stochastic model. I'll wibble a bit at the end about the coding experience...
 
