@@ -50,3 +50,13 @@ gems:
     - jekyll-feed
 
 exclude: ['README.md', 'LICENSE']
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: "true"
+      category: "nontech"
