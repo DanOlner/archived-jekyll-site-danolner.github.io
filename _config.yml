@@ -30,11 +30,23 @@ paginate: 3
 
 #encoding: utf-8
 
-highlighter: pygments
+highlighter: rouge
 #highlighter: true
-markdown: redcarpet
+#markdown: redcarpet
 #markdown: rdiscount
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+markdown: kramdown
+
+kramdown:
+    input: GFM
+    hard_wrap: false
+
+#redcarpet:
+ # extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data"]
+ 
+ 
+gems: 
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-feed
 
 exclude: ['README.md', 'LICENSE']
