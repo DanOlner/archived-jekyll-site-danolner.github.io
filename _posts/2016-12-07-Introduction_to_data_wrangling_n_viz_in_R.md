@@ -5,11 +5,6 @@ date: 2016-12-07
 comments: true
 ---
 
-
-
-
-
-
 # Introduction to R
 
 I just ran an introduction-to-R one day workshop here at the [Sheffield Methods Institute](https://www.sheffield.ac.uk/smi) on behalf of [AQMeN](http://aqmen.ac.uk/). The aim was to introduce people with no previous experience of R to RStudio, data wrangling with the various [tidyverse libraries](https://blog.rstudio.org/2016/09/15/tidyverse-1-0-0/) and outputting some plots/visualisations with [ggplot](http://docs.ggplot2.org/current/).
@@ -30,5 +25,5 @@ Any comments/suggestions, do let me know (d dot older at sheffield dot ac dot uk
 
 * **Note note**: the full data prep code includes an explanation of how the postcodes were used to geocode geographies into a lookup, so serve as a real-data intro to geocoding in R. This code uses two (also open access) zone shapefiles: [Travel-to-work areas (TTWAs)](http://webarchive.nationalarchives.gov.uk/20160105160709/http://www.ons.gov.uk/ons/guide-method/geography/beginner-s-guide/other/travel-to-work-areas/index.html) and ward shapefiles for England from [the Census Edina boundary data download site](https://census.edina.ac.uk/). (TTWAs are in 'England / Other / 2001-2010, wards are from England / Census / English Census Merged Wards 2011.)
 
-<img src="http://danolner.github.io/figs/intro2R_writeUp/unnamed-chunk-2-1.png" title="center" alt="center" style="display: block; margin: auto;" />
+<img src="http://danolner.github.io/figs/intro2R_writeUp/unnamed-chunk-2-1.png" title="center" alt="center" style="display: block; margin: auto;" width = "650" />
 
