@@ -11,7 +11,7 @@ I just ran an introduction-to-R one day workshop here at the [Sheffield Methods 
 
 I'll be updating the course based on experience of this first one, but if you want a go, the course booklet is written assuming no previous knowledge and should, in theory, work for self-learning. It's all based on open access data so it's available to everyone. If you're interested:
 
-* go [pick a city from here](http:bit.ly/cityzips). Each is a zipped up RStudio project with that city/town's travel-to-work area plus London.
+* go [pick a city from here](http://bit.ly/cityzips). Each is a zipped up RStudio project with that city/town's travel-to-work area plus London.
 
 * Make sure you've got [RStudio](https://www.rstudio.com/products/rstudio/download3/) and [R installed](https://www.r-project.org/).
 
