@@ -9,6 +9,8 @@ comments: true
 
 # Spatial R for social good!
 
+<img class="blogimg" src="https://raw.githubusercontent.com/DanOlner/optimalPubCrawl/master/images/optimal.png" width="450"/>
+
 Well maybe. [Sheffield R User Group](http://sheffieldr.github.io/) kindly invited me to wiffle at them about an R topic of my choosing. So I chose two. As well as taking the chance to share my pain in coding the analysis for [this windfarms project](http://www.climatexchange.org.uk/reducing-emissions/impact-wind-farms-property-prices/), I thought I'd bounce up and down about how great R's spatial stuff is for anyone who hasn't used it. It's borderline magical.
 
 So by way of introduction to spatial R, and to honour the R User Group's [venue of choice](http://www.red-deer-sheffield.co.uk/), I present the **[Pub Crawl Optimiser](https://github.com/DanOlner/optimalPubCrawl)**.
@@ -35,4 +37,3 @@ A couple of friends have actually suggested attempting the 29 pub crawl in the c
 
 So what would you want to see in an essential introduction to spatial R for anyone new to it?
 
-<img src="https://raw.githubusercontent.com/DanOlner/optimalPubCrawl/master/images/optimal.png" width="550"/>

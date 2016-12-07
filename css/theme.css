@@ -49,3 +49,8 @@ body {
 .author a {
     color: #ee4444;
 }
+
+img.blogimg {
+	float: right;
+    margin: 0 0 10px 10px;
+}
