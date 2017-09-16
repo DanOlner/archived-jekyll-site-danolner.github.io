@@ -17,7 +17,7 @@ I was pretty startled by how house prices have changed when compared to median w
 
 The graph in the [previous post](http://danolner.github.io/2017/09/Learn_GGPLOT_and_R_using_English_house_price_and_wage_data) shows this index for the top and bottom five local authorities (from a rank of 2016 wage multiples). What it **doesn't** include is the following...
 
-**Note: I've pre-selected a sub-set of local authorities for the course - London would dominate the top values if all local authorities were included.**
+**Note: I've pre-selected a sub-set of local authorities for the course - London would have all the top values if all local authorities were included.**
 
 ![center](http://danolner.github.io/figs/housePriceWageMultiple/unnamed-chunk-2-1.png)
 
