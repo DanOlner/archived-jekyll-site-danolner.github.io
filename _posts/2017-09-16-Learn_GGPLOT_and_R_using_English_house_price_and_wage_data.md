@@ -40,7 +40,15 @@ There's also a bit on outputting multiple plots to a folder and lastly, inspired
 
 Any questions, feel free to ask: d dot olner at sheffield dot ac uk or on [that there Twitter](https://twitter.com/DanOlner).
 
+## House prices as a multiple of wages
+
 ![center](http://danolner.github.io/figs/principlesOfVizWithGGPLOT/unnamed-chunk-3-1.png)
+
+## Pulling out model values into a viz
+
+Percentage along the x axis: percent increase in house prices for a 1 percent increase in employment in wards for those TTWAs. (Note point above: illustration of pulling out model values, not a good model!)
+
+![center](http://danolner.github.io/figs/principlesOfVizWithGGPLOT/unnamed-chunk-4-1.png)
 
 
 
