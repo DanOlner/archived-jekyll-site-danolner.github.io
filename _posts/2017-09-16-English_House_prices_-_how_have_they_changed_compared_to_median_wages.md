@@ -15,7 +15,9 @@ for visualising data in R and ggplot. All the data and links are over there. Her
 
 I was pretty startled by how house prices have changed when compared to median wages. House prices are raw - without adjusting, their value over time is not really comparable. Adjusting them just for straight inflation can be misleading as house prices aren't actually included in that. A better measure (I think) is 'cost of housing as a multiple of wages'. This also allows for a more geographically interesting picture. [NOMIS](https://www.nomisweb.co.uk/) median wage data is available yearly for each local authority and goes back to 1997, so you can build a house price index for each local authority up to 2016. (E.g. 'this house is worth four times the yearly median wage here.')
 
-The graph in the [previous post](http://danolner.github.io/2017/09/Learn_GGPLOT_and_R_using_English_house_price_and_wage_data) shows this index for the top and bottom five local authorities (from a rank of 2016 wage multiples). What it **doesn't** include is this:
+The graph in the [previous post](http://danolner.github.io/2017/09/Learn_GGPLOT_and_R_using_English_house_price_and_wage_data) shows this index for the top and bottom five local authorities (from a rank of 2016 wage multiples). What it **doesn't** include is the following...
+
+**Note: I've pre-selected a sub-set of local authorities for the course - London would dominate the top values if all local authorities were included.**
 
 ![center](http://danolner.github.io/figs/housePriceWageMultiple/unnamed-chunk-2-1.png)
 
@@ -25,7 +27,7 @@ But it's pretty amazing, huh? The average house there has gone from just under t
 
 ![center](http://danolner.github.io/figs/housePriceWageMultiple/unnamed-chunk-3-1.png)
 
-Kensingon and Chelsea is out there on the right by itself: actually not that high a median wage but by far the large wage multiple for housing. So what this is likely showing: as well as having some of the priciest housing, it also has many lower-waged people. It's a highly mixed area. In some imaginary future (I'm sure this would *never* happen / isn't happening...) where much of the area's social housing tenants had moved elsewhere, the index would actually start to drop.
+Kensingon and Chelsea is out there on the right by itself: actually not that high a median wage but by far the largest wage multiple for housing. So what this is likely showing: as well as having some of the priciest housing, it also has many lower-waged people. It's a highly mixed area. In some imaginary future (I'm sure this would *never* happen / isn't happening...) where much of the area's social housing tenants had moved elsewhere, the index would actually start to drop.
 
 The NOMIS data actually contains every wage percentile - it's very gappy for 90th percentile as they don't include numbers that are not statistically reliable and there aren't enough people in that category. At any rate - looking at other percentiles might provide a deeper look at what's going on.
 
