@@ -34,6 +34,8 @@ The lowest-value areas (easier to see in the minus-Kensington graph in [the othe
 
 There are some other slightly puzzling areas with very high median wages and low house values. I'm a little suspicious of the data for those (e.g. Copeland in the point plot above) but more digging also required...
 
+## Code and data to play with yourself
+
 To end: here's some R code with links to tidied data for both median wages and English house prices if you want to reproduce this or look at different areas. It's about the same as the course code but (1) it uses **all local authorities** so London now has six of the top seven values; (2) I've added median house price in too (plotted at the end), which is more in line with the values in the Guardian article linked above. At some point I'll come back to grabbing and tidying the data / getting the Land Registry data geocoded etc. 
 
 
