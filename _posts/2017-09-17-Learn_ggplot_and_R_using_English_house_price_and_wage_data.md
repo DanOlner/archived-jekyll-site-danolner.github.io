@@ -15,7 +15,7 @@ Same as with the [last workshop](http://danolner.github.io/2016/12/Introduction_
 
 * **There's a pre-amble course chunk for anyone totally new to R**. It goes through the basics of R, RStudio and dataframes - it's in the form of an R project. That zip can be [downloaded from here](https://www.dropbox.com/s/dltzb2iobr7rtmq/UBDC_R_viz_intro_primer.zip?dl=1). The PDF is in the **course booklet** folder.
 
-* **The main course folder** can be [downloaded here](https://www.dropbox.com/s/xff6g7rbi4dj3am/visualisingDataWithRandGGPLOT_UBDC2017.zip?dl=1). It's the same folder structure but doesn't have an already-made RStudio project, so you'll just have to make a new one - that's explained in the course booklet (again, in the folder of the same name).
+* **The main course folder** can be [downloaded here](https://www.dropbox.com/s/x8ii48wll7nzf33/visualisingDataWithRandGGPLOT_UBDC2017.zip?dl=1). It's the same folder structure but doesn't have an already-made RStudio project, so you'll just have to make a new one - that's explained in the course booklet (again, in the folder of the same name).
 
 The day used two datasets, pre-wrangled into more friendly form. First, Land Registry house price data for England - the original data can be downloaded in one ~4gb chunk [from here](https://www.gov.uk/government/statistical-data-sets/price-paid-data-downloads). Second, median wage data at local authority level [from NOMIS](https://www.nomisweb.co.uk/). There was also a bit of Census employment data in there. 
 
@@ -46,7 +46,7 @@ Any questions, feel free to ask: d dot olner at sheffield dot ac uk or on [that 
 
 ## Pulling out model values into a viz
 
-Percentage along the x axis: percent increase in house prices for a 1 percent increase in employment in wards for those TTWAs. (Note point above: illustration of pulling out model values, not a good model!)
+X axis: percent increase in house prices for a 1 percent increase in employment in wards for those TTWAs. (Note point above: illustration of pulling out model values, not a good model!)
 
 ![center](http://danolner.github.io/figs/principlesOfVizWithGGPLOT/unnamed-chunk-5-1.png)
 
