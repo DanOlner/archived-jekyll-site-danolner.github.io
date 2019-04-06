@@ -14,7 +14,7 @@ comments: true
 
 
 
-# tl;dr
+# TL;DR
 
 * This looks at one persnickety issue that appears trivial but is a bit more nuanced than it appears: (1) finding change over time (2) when using geographical zone data (3) when you want to know how some sub-population in those zones has changed.
 * Out of four ways of measuring that change, the one I find most useful and intuitive is: percentage change of the sub-population **as a proportion of the zone total population in the first time period**. 
