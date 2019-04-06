@@ -188,7 +188,7 @@ A simple solution is this: just use the first time period total population for t
 
 {% highlight r %}
 change <- change %>% 
-  mutate(propdiff_over_tminus1 = ((studentpop/-lag(studentpop))/lag(totalpop))*100)
+  mutate(propdiff_over_tminus1 = ((studentpop-lag(studentpop))/lag(totalpop))*100)
 
 change %>% filter(year == 't') %>% 
   ggplot(aes(x = code, y = propdiff_over_tminus1)) +
