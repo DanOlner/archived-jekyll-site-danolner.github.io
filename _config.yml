@@ -4,13 +4,14 @@ name: danolner.github.io
 description: dan's home for code and code-wibble
 
 # url is currently only used only for the RSS feed in feed.xml
-url: http://danolner.github.io
+url: http://danolner.github.io/archived-jekyll-site-danolner.github.io
 
 # baseurl will often be '', but for a project page on gh-pages, it needs to
 # be the project name.
 # *** IMPORTANT: If your local "jekyll serve" throws errors change this to '' or
 #     run it like so: jekyll serve --baseurl=''
-baseurl: 'archived-jekyll-site-danolner.github.io'
+#baseurl: 'archived-jekyll-site-danolner.github.io'
+baseurl: ''
 
 # This can be '' to hide the Github nav button
 github: 'DanOlner'
